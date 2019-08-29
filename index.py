@@ -1,19 +1,18 @@
 # ## Problem 1:
+class movie:
+    def __init__(self, movieName, rating, yearReleased):
+        self.movieName = movieName
+        self.rating = rating
+        self.yearReleased = yearReleased
 
-# class movie:
-#     def __init__(self, movieName, rating, yearReleased):
-#         self.movieName = movieName
-#         self.rating = rating
-#         self.yearReleased = yearReleased
-#
-#     def conjunctionjunction(self):
-#         print(f"My favorite movie is {self.movieName}. It was released in {self.yearReleased} with a {self.rating}")
-#
-#     def __str__(self):
-#         print("This movie was a box-office hit")
-#
-# film = movie("School House Rock", "100%", "2015")
-# print(film.conjunctionjunction())
+    def conjunctionjunction(self):
+        print(f"My favorite movie is {self.movieName}. It was released in {self.yearReleased} with a {self.rating}")
+
+    def __str__(self): # !! : implement the code that will print the value of all the properties/attributes of the Movie class
+        print("This movie was a box-office hit")
+
+film = movie("School House Rock", "100%", "2015")
+print(film.conjunctionjunction()) # !! : conjunctionjunction() does not return a value so you can't print it
 
 
 # ### Problem 2:
@@ -36,9 +35,9 @@ class Product:
         self.price = "9.00"
         print(f"Todays special is {self.name}. it is {self.price} and you can get {self.quantity}")
 
-    def __str__(self):
+    def __str__(self): # !! : implement the code that will print the value of all the properties/attributes of the Product class
         print('The special for today')
 
 item = Product("$100", "5", "f0rK")
 
-print(item.changep())
+print(item.changep()) # !! : changep() does not return a value so you can't print it
